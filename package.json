@@ -1,0 +1,44 @@
+{
+    "name": "oet-hubms-af-auth0",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/{index.js, functions/*.js}",
+    "scripts": {
+        "clean": "rimraf coverage dist",
+        "build": "tsc --build && tsc-alias",
+        "build:watch": "tsc -build && tsc-alias --watch",
+        "prestart": "pnpm clean && pnpm build",
+        "start": "func start",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier . --write"
+    },
+    "engines": {
+        "node": ">=22.3.x",
+        "pnpm": ">=9.4.x"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.8.0",
+        "@types/bcryptjs": "^2.4.6",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.1.0",
+        "azure-functions-core-tools": "^4.0.5907",
+        "bcryptjs": "^2.4.3",
+        "eslint": "^9.8.0",
+        "eslint-config-prettier": "^9.1.0",
+        "lint-staged": "^15.2.8",
+        "prettier": "^3.3.3",
+        "rimraf": "^6.0.1",
+        "tsc-alias": "^1.8.10",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.0.1"
+    },
+    "dependencies": {
+        "@azure/functions": "^4.5.0",
+        "http-status-codes": "^2.3.0",
+        "mongodb": "^6.8.0"
+    }
+}

@@ -1,0 +1,23 @@
+# IDE
+.vscode
+
+# Dependency directories
+node_modules
+
+# Environment variables
+.env
+
+# Compiled outputs
+build
+
+# Typescript outputs
+dist
+
+# testing
+coverage
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+local.settings.json

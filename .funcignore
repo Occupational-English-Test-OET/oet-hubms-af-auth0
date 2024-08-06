@@ -1,0 +1,10 @@
+*.js.map
+*.ts
+.git*
+.vscode
+coverage
+local.settings.json
+test
+README.md
+node_modules
+tsconfig.json
