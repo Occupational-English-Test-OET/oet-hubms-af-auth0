@@ -2,7 +2,7 @@
     "name": "oet-hubms-af-auth0",
     "version": "1.0.0",
     "description": "",
-    "main": "dist/{index.js, functions/*.js}",
+    "main": "dist/functions/*.js",
     "scripts": {
         "clean": "rimraf coverage dist",
         "build": "tsc --build && tsc-alias",

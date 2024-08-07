@@ -1,4 +1,3 @@
-import { StatusCodes } from 'http-status-codes';
 import {
     app,
     HttpRequest,
@@ -23,15 +22,15 @@ export const login = async (
         );
 
         return {
-            status: StatusCodes.OK,
             jsonBody: {
                 result: user,
             },
         };
     } catch (error) {
         return {
-            status: StatusCodes.BAD_REQUEST,
-            jsonBody: error,
+            jsonBody: {
+                result: error,
+            },
         };
     }
 };
