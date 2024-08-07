@@ -1,7 +1,9 @@
 import { ObjectId } from 'mongodb';
 
 export default class User {
-    emailAddress = '';
-    secret = '';
-    id?: ObjectId;
+    constructor(
+        public emailAddress: string,
+        public secret: string,
+        public id?: ObjectId
+    ) {}
 }
